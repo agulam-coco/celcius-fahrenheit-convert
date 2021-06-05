@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" defer src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="input-container">
+
+            <div class="first-row">
+                <form>
+                    <div>
+                        <label for="degrees">Degrees</label>
+                        <input type="number" id="degrees" name="degrees">
+                    </div>
+
+                    <div>
+                        <label for="from">Convert From</label>
+                        <select name="from" id="from">
+                            <option value="c">Celcius</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                    </div>    
+                    <div>
+                        <label for="to">Convert To</label>
+                        <select name="to" id="to">
+                            <option value="c">Celcius</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                    </div>    
+
+                <button type="button">Convert</button>
+                </form>
+            </div>
+
+            <div class="second-row">
+                    <div class=result-label>Result</div>
+                    <div class="result" id="result"><b>Answer</b></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
